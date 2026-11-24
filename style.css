@@ -1,0 +1,142 @@
+
+/* Heile nettsida */
+body {
+    background-color: #121820;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Overskrifta */
+header {
+    background-color: #202a36;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid orange;
+}
+
+h1 {
+    color: orange;
+    font-size: 38px;
+    margin: 0;
+}
+
+/* Hovudinnhald */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+h2 {
+    color: orange;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+/* Søkefeltet */
+#sok {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    background-color: #202a36;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#sok:focus {
+    outline: 2px solid white;
+}
+
+/* Plassering av våpena */
+#vapenListe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Våpenkorta */
+.vapen {
+    background-color: #202a36;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #354353;
+    transition: 0.2s;
+}
+
+/* Effekt når musa er over kortet */
+.vapen:hover {
+    border-color: orange;
+    transform: translateY(-4px);
+}
+
+/* Våpenbileta */
+.vapen img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* Våpennamn */
+.vapen h2 {
+    color: orange;
+    font-size: 22px;
+}
+
+/* Informasjon */
+.vapen p {
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+/* Botntekst */
+footer {
+    background-color: #202a36;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Seksjonane kjem under kvarandre */
+#vapenListe {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Kvar våpenkategori */
+.kategori {
+    width: 100%;
+}
+
+/* Overskrifter */
+.kategori h2 {
+    color: orange;
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Våpena ligg ved sida av kvarandre */
+.vapenGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Mobiltilpassing */
+@media (max-width: 600px) {
+    .vapenGrid {
+        grid-template-columns: 1fr;
+    }
+}
